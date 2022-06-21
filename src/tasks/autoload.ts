@@ -1,4 +1,4 @@
-import { page } from "../page.tsx";
+import { page } from "../page.ts";
 
 export function autoloadPages(
   routes: Record<string, unknown>,
