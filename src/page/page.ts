@@ -1,6 +1,6 @@
 import { h, Helmet, renderSSR } from "./deps.ts";
 
-import type { Integration } from "../css/integration.ts";
+import type { Integration } from "../integration.ts";
 
 interface PageProps {
   component: any;
