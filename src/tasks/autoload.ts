@@ -1,5 +1,5 @@
 import { page } from "../page/mod.ts";
-import { Integration } from "../css/integration.ts";
+import { Integration } from "../integration.ts";
 
 interface TaskConfig {
   cssIntegration?: Integration;
