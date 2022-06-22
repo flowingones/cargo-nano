@@ -1,2 +1,1 @@
-export * from "./page.ts";
-export { Nano } from "./deps.ts";
+export * from "https://deno.land/x/nano_jsx@v0.0.32/mod.ts";
