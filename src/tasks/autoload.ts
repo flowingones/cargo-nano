@@ -1,4 +1,4 @@
-import { page } from "../page.ts";
+import { page } from "../page/mod.ts";
 
 export function autoloadPages(
   routes: Record<string, unknown>,
