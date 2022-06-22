@@ -1,4 +1,4 @@
-import { getStyleTag, Nano, sheet } from "./deps.ts";
+import { Nano, Twind } from "./deps.ts";
 
 interface PageProps {
   component: any;
@@ -21,7 +21,7 @@ function html(app: string) {
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      ${getStyleTag(sheet)}
+      ${Twind.getStyleTag(Twind.sheet)}
       ${head.join("\n")}
     </head>
     <body ${attributes.body.toString()}>
