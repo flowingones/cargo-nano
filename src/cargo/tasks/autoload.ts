@@ -14,8 +14,6 @@ export function autoloadPages(
       /* @ts-ignore */
       const component: any = routes[route];
 
-      console.log(mappedPath(route));
-
       app.getProtocol("http")?.router.add({
         path: mappedPath(route),
         method: "GET",
