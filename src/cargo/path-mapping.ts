@@ -11,7 +11,7 @@ const pathMappings = new Map<string, PathMapping>([
 
 export function mappedPath(path: string): string {
   const parsedPath = parse(path);
-  const mappedPath = pathMappings.get(parsedPath.name);
+  const mappedPath = pathMappings.get(`/${parsedPath.name}`);
 
   if (mappedPath) {
     return `${parsedPath.dir.replace(/\/$/, "")}${mappedPath}`;
