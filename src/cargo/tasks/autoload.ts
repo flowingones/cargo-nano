@@ -1,5 +1,5 @@
 import { page } from "../page/mod.ts";
-import { Integration } from "../integration.ts";
+import { Integration, mappedPath } from "../mod.ts";
 
 interface TaskConfig {
   cssIntegration?: Integration;
@@ -15,7 +15,7 @@ export function autoloadPages(
       const component: any = routes[route];
 
       app.getProtocol("http")?.router.add({
-        path: route,
+        path: mappedPath(route),
         method: "GET",
         handler: () => {
           return new Response(
