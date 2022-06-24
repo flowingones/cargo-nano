@@ -5,7 +5,7 @@ interface PathMapping {
 }
 
 const pathMappings = new Map<string, PathMapping>([
-  ["/index", { path: "/" }],
+  ["/index", { path: "" }],
   ["/_404", { path: "/*" }],
 ]);
 
@@ -14,7 +14,7 @@ export function mappedPath(path: string): string {
   const mappedPath = pathMappings.get(`/${parsedPath.name}`);
 
   if (mappedPath) {
-    return `${parsedPath.dir.replace(/\/$/, "")}${mappedPath.path}`;
+    return `${parsedPath.dir}${mappedPath.path}`;
   }
 
   return path;
