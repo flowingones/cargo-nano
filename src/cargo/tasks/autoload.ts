@@ -1,5 +1,4 @@
-import { page } from "../page/mod.ts";
-import { Integration, mappedPath } from "../mod.ts";
+import { Integration, mappedPath, page } from "../mod.ts";
 
 interface TaskConfig {
   cssIntegration?: Integration;
