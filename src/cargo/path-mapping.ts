@@ -3,8 +3,8 @@ interface PathMapping {
 }
 
 const pathMappings = new Map<string, PathMapping>([
-  ["/index", { path: "" }],
-  ["/_404", { path: "*" }],
+  ["/index", { path: "/" }],
+  ["/_404", { path: "/*" }],
 ]);
 
 export function mappedPath(path: string): string {
