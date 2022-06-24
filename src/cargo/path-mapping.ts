@@ -12,10 +12,8 @@ const pathMappings = new Map<string, PathMapping>([
 export function mappedPath(path: string): string {
   const parsedPath = parse(path);
   const mappedPath = pathMappings.get(`/${parsedPath.name}`);
-
   if (mappedPath) {
     return `${parsedPath.dir}${mappedPath.path}`;
   }
-
   return path;
 }
