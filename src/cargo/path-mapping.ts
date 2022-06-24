@@ -14,7 +14,7 @@ export function mappedPath(path: string): string {
   const mappedPath = pathMappings.get(`/${parsedPath.name}`);
 
   if (mappedPath) {
-    return `${parsedPath.dir.replace(/\/$/, "")}${mappedPath}`;
+    return `${parsedPath.dir.replace(/\/$/, "")}${mappedPath.path}`;
   }
 
   return path;
