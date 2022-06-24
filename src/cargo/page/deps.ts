@@ -1,1 +1,1 @@
-export { h, Helmet, renderSSR } from "../mod.ts";
+export { h, Helmet, renderSSR } from "../../mod.ts";
