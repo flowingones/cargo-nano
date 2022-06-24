@@ -8,5 +8,5 @@ const pathMappings = new Map<string, PathMapping>([
 ]);
 
 export function mappedPath(path: string): string {
-  return pathMappings.get(path)?.path || path;
+  return pathMappings.get(path)?.path ?? path;
 }
